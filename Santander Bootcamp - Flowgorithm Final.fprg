@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-07-05 01:19:06 "/>
+        <attribute name="created" value="QW5kcmU7REVTS1RPUC1ONTU3TktUOzIwMjEtMDYtMjg7IjA5OjA5OjQ5ICI7Mjc1Ng=="/>
+        <attribute name="edited" value="QW5kcmU7REVTS1RPUC1ONTU3TktUOzIwMjEtMDctMDU7IjAxOjE5OjA2ICI7NjsyODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="carlos1, carlos2, carlos3, carlos4, andrei1, andrei2, andrei3, andrei4, bruno1, bruno2, bruno3, bruno4, manual1, manual2, manual3, manual4, mediac, mediaa, mediab, mediam" type="Real" array="False" size=""/>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <declare name="Matricula, Controle" type="Integer" array="False" size=""/>
+            <assign variable="carlos1" expression="4"/>
+            <assign variable="carlos2" expression="5"/>
+            <assign variable="carlos3" expression="10"/>
+            <assign variable="carlos4" expression="6"/>
+            <assign variable="andrei1" expression="6"/>
+            <assign variable="andrei2" expression="8"/>
+            <assign variable="andrei3" expression="7"/>
+            <assign variable="andrei4" expression="6"/>
+            <assign variable="bruno1" expression="2"/>
+            <assign variable="bruno2" expression="7"/>
+            <assign variable="bruno3" expression="3"/>
+            <assign variable="bruno4" expression="8"/>
+            <assign variable="mediac" expression="(carlos1+carlos2+carlos3+carlos4)/4"/>
+            <assign variable="mediaa" expression="(andrei1+andrei2+andrei3+andrei4)/4"/>
+            <assign variable="mediab" expression="(bruno1+bruno2+bruno3+bruno4)/4"/>
+            <assign variable="Controle" expression="1"/>
+            <output expression="&quot;Ola, Bem vindo ao controle de aprova&#231;&#227;o do semestre. Qual seu nome?&quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Sauda&#231;&#245;es &quot; &amp; Nome &amp; &quot; para verificar as notas e o status da aprova&#231;&#227;o me informe uma das matriculas:&quot;" newline="True"/>
+            <while expression="Controle &lt;&gt; 2">
+                <output expression="&quot;Carlos = 22222&quot;" newline="True"/>
+                <output expression="&quot;Andrei = 33333&quot;" newline="True"/>
+                <output expression="&quot;Bruno = 44444&quot;" newline="True"/>
+                <output expression="&quot;Calcular M&#233;dia = 00000&quot;" newline="True"/>
+                <input variable="Matricula"/>
+                <if expression="Matricula = 22222">
+                    <then>
+                        <if expression="mediac&gt;=6">
+                            <then>
+                                <output expression="&quot;Matricula de Carlos Alves, notas:&quot;" newline="True"/>
+                                <output expression="&quot;Portugu&#234;s = &quot; &amp; carlos1" newline="True"/>
+                                <output expression="&quot;Matem&#225;tica = &quot; &amp; carlos2" newline="True"/>
+                                <output expression="&quot;Ci&#234;ncias = &quot; &amp; carlos3" newline="True"/>
+                                <output expression="&quot;Hist&#243;ria = &quot; &amp; carlos4" newline="True"/>
+                                <output expression="&quot;M&#233;dia Geral = &quot; &amp; mediac" newline="True"/>
+                                <output expression="&quot;Status = APROVADO&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Matricula de Carlos Alves, notas:&quot;" newline="True"/>
+                                <output expression="&quot;Portugu&#234;s = &quot; &amp; carlos1" newline="True"/>
+                                <output expression="&quot;Matem&#225;tica = &quot; &amp; carlos2" newline="True"/>
+                                <output expression="&quot;Ci&#234;ncias = &quot; &amp; carlos3" newline="True"/>
+                                <output expression="&quot;Hist&#243;ria = &quot; &amp; carlos4" newline="True"/>
+                                <output expression="&quot;M&#233;dia Geral = &quot; &amp; mediac" newline="True"/>
+                                <output expression="&quot;Status = REPROVADO&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Matricula = 33333">
+                            <then>
+                                <if expression="mediaa&gt;=6">
+                                    <then>
+                                        <output expression="&quot;Matricula de Andrei Alves, notas:&quot;" newline="True"/>
+                                        <output expression="&quot;Portugu&#234;s = &quot; &amp; andrei1" newline="True"/>
+                                        <output expression="&quot;Matem&#225;tica = &quot; &amp; andrei2" newline="True"/>
+                                        <output expression="&quot;Ci&#234;ncias = &quot; &amp; andrei3" newline="True"/>
+                                        <output expression="&quot;Hist&#243;ria = &quot; &amp; andrei4" newline="True"/>
+                                        <output expression="&quot;M&#233;dia Geral = &quot; &amp; mediaa" newline="True"/>
+                                        <output expression="&quot;Status = APROVADO&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Matricula de Andrei Alves, notas:&quot;" newline="True"/>
+                                        <output expression="&quot;Portugu&#234;s = &quot; &amp; andrei1" newline="True"/>
+                                        <output expression="&quot;Matem&#225;tica = &quot; &amp; andrei2" newline="True"/>
+                                        <output expression="&quot;Ci&#234;ncias = &quot; &amp; andrei3" newline="True"/>
+                                        <output expression="&quot;Hist&#243;ria = &quot; &amp; andrei4" newline="True"/>
+                                        <output expression="&quot;M&#233;dia Geral = &quot; &amp; mediaa" newline="True"/>
+                                        <output expression="&quot;Status = REPROVADO&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="Matricula = 44444">
+                                    <then>
+                                        <if expression="mediab&gt;=6">
+                                            <then>
+                                                <output expression="&quot;Matricula de Bruno Alves, notas:&quot;" newline="True"/>
+                                                <output expression="&quot;Portugu&#234;s = &quot; &amp; bruno1" newline="True"/>
+                                                <output expression="&quot;Matem&#225;tica = &quot; &amp; bruno2" newline="True"/>
+                                                <output expression="&quot;Ci&#234;ncias = &quot; &amp; bruno3" newline="True"/>
+                                                <output expression="&quot;Hist&#243;ria = &quot; &amp; bruno4" newline="True"/>
+                                                <output expression="&quot;M&#233;dia Geral = &quot; &amp; mediab" newline="True"/>
+                                                <output expression="&quot;Status = APROVADO&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Matricula de Bruno Alves, notas:&quot;" newline="True"/>
+                                                <output expression="&quot;Portugu&#234;s = &quot; &amp; bruno1" newline="True"/>
+                                                <output expression="&quot;Matem&#225;tica = &quot; &amp; bruno2" newline="True"/>
+                                                <output expression="&quot;Ci&#234;ncias = &quot; &amp; bruno3" newline="True"/>
+                                                <output expression="&quot;Hist&#243;ria = &quot; &amp; bruno4" newline="True"/>
+                                                <output expression="&quot;M&#233;dia Geral = &quot; &amp; mediab" newline="True"/>
+                                                <output expression="&quot;Status = REPROVADO&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </then>
+                                    <else>
+                                        <if expression="Matricula = 00000">
+                                            <then>
+                                                <output expression="&quot;Calculo manual de nota, informe as notas de:&quot;" newline="True"/>
+                                                <output expression="&quot;Portugu&#234;s: &quot;" newline="True"/>
+                                                <input variable="manual1"/>
+                                                <output expression="&quot;Matem&#225;tica: &quot;" newline="True"/>
+                                                <input variable="manual2"/>
+                                                <output expression="&quot;Ci&#234;ncias: &quot;" newline="True"/>
+                                                <input variable="manual3"/>
+                                                <output expression="&quot;Hist&#243;ria: &quot;" newline="True"/>
+                                                <input variable="manual4"/>
+                                                <assign variable="mediam" expression="(manual1+manual2+manual3+manual4)/4"/>
+                                                <if expression="mediam&gt;=6">
+                                                    <then>
+                                                        <output expression="&quot;M&#233;dia Geral: &quot; &amp; mediam" newline="True"/>
+                                                        <output expression="&quot;Status = APROVADO&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <output expression="&quot;M&#233;dia Geral: &quot; &amp; mediam" newline="True"/>
+                                                        <output expression="&quot;Status = REPROVADO&quot;" newline="True"/>
+                                                    </else>
+                                                </if>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;Matricula n&#227;o encontrada&quot;" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Gostaria de fazer uma nova pesquisa?&quot;" newline="True"/>
+                <output expression="&quot;1 - Sim&quot;" newline="True"/>
+                <output expression="&quot;2 - N&#227;o&quot;" newline="True"/>
+                <input variable="Controle"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
